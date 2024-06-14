@@ -36,7 +36,7 @@ const TextTyping = ({ text }) => {
     useEffect(() => {
       const typeWriter = async () => {
         for (let i = 0; i < text.length; i++) {
-          await new Promise(resolve => setTimeout(resolve, 50)); // Adjust speed here
+          await new Promise(resolve => setTimeout(resolve, 500)); // Adjust speed here
           setTypedText(text.substring(0, i + 1));
         }
         setIsVisible(true);

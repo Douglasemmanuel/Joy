@@ -14,7 +14,7 @@ const Page1 = () => {
     <div>
     <motion.h1
     initial={{y:100}}
-    animate={{y:[0 ,500 , 0] }}
+    animate={{y:[500 , 0] }}
     transition={{
         duration:2,
         delay:0
