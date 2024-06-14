@@ -17,7 +17,7 @@ const Page2 = () => {
         duration:2,
         delay:0
     }}
-    style={{fontSize:'2rem'}}
+    style={{fontSize:'2rem' , fontFamily:"Roboto"}}
     whileHover={{scale:0.9 , opacity:0.5}}
     onAnimationComplete={move}
     >

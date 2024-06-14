@@ -23,7 +23,7 @@ const Page9 = () => {
     }}
     whileHover={{scale:0.9 , opacity:0.5}}
     onAnimationComplete={()=> setAnimateHeading2(true)}
-    style={{fontSize:'10rem'}}
+    style={{fontSize:'10rem', fontFamily:"Roboto"}}
     >
       S
     </motion.h1>
@@ -37,7 +37,7 @@ const Page9 = () => {
             duration:2,
             delay:0
         }}
-        style={{fontSize:'10rem'}}
+        style={{fontSize:'10rem', fontFamily:"Roboto"}}
         onAnimationComplete={move }
         >
         o

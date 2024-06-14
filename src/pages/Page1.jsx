@@ -21,19 +21,20 @@ const Page1 = () => {
     }}
     whileHover={{scale:0.9 , opacity:0.5}}
     onAnimationComplete={()=> setAnimateHeading2(true)}
+    style={{fontSize:'2rem'}}
     >
       Hey Pretty Joy
     </motion.h1>
     {animateHeading2 && (
         <motion.p
         initial={{y:100  }}
-        animate={{y:[200 , 0] }}
+        animate={{y:[400 , 0] }}
         transition={{
             duration:2,
             delay:0
         }}
         onAnimationComplete={move }
-        style={{fontSize:'2rem'}}
+        style={{fontSize:'2rem', fontFamily:"Roboto"}}
         >
         I really like you my girl! fr!
         </motion.p>

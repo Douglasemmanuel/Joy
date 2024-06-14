@@ -30,7 +30,7 @@ transition={{
     duration:2,
     delay:0
 }}
-style={{fontSize:'2rem'}}
+style={{fontSize:'1.6rem', fontFamily:"Roboto"}}
 onAnimationComplete={()=> setAnimateHeading2(true)}
 // whileHover={{scale:0.9 , opacity:0.5}}
 >
@@ -43,7 +43,7 @@ I realised , I wanted to do something
            duration:2,
            delay:0
        }}
-       style={{fontSize:'3rem' , color:'white'  , width:'10rem' , background:'blue' }} >Special</motion.span>
+       style={{fontSize:'2rem' , color:'white'  , width:'10rem' , background:'blue', fontFamily:"Roboto" }} >Special</motion.span>
       
        )}
        
