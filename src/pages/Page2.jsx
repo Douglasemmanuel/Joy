@@ -10,18 +10,19 @@ const Page2 = () => {
     }
   return (
     <div>
-        <motion.h1
+        <motion.p
     initial={{y:10}}
     animate={{y:[0 ,50 , 0] }}
     transition={{
         duration:2,
         delay:0
     }}
+    style={{fontSize:'2rem'}}
     whileHover={{scale:0.9 , opacity:0.5}}
     onAnimationComplete={move}
     >
       It's your birthday my girl!!!
-    </motion.h1>
+    </motion.p>
     </div>
   )
 }
