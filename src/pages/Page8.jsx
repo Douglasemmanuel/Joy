@@ -13,20 +13,21 @@ const Page8 = () => {
     }
   return (
     <div>
-    <motion.h1
+    <motion.p
 initial={{y:200}}
 animate={{y:[0 ,100 , 0 ] }}
 transition={{
     duration:2,
     delay:0
 }}
+style={{fontSize:'2.5rem'}}
 // whileHover={{scale:0.9 , opacity:0.5}}
 onAnimationComplete={move}
 >
   You are Special
   <FontAwesomeIcon icon={faFaceGrinHearts} />
   {/* <FontAwesomeIcon icon="fa-solid fa-face-grin-hearts" /> */}
-</motion.h1>
+</motion.p>
 </div>
   )
 }

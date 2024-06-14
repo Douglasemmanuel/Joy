@@ -3,29 +3,26 @@ import {motion} from 'framer-motion'
 import { useState , useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 const Page3 = () => {
+  // const [isVisible, setIsVisible] = useState(false);
+  const move =()=>{
+    console.log('hiii')
+    navigate('/4')
+}
+  // useEffect(()=>{
+  //   setTimeout(()=>{
+  
+  //     isVisible(true)
+  //     console.log('jii')
+  //     move()
+      
+  // },1000);
+  // },[])
   return (
     <div>
         <h1>Happy birthday</h1>
-        <TextTyping text="Happy birthday joy" />
-        {/* <motion.h1
-            initial={{x:0 , opacity:0 , text:''}}
-            animate={{x:'100%' , opacity:1 , text:'Happy birthday'}}
-            transition={{duration:2 , ease:'easeOut' , delay:0.5, 
-            staggerChildren:{
-                amount:0.1,
-                from:'start'
-            }
-        }}
-            split={{
-                chars:true,
-                animate:{
-                    opacity:1,
-                    transition:{duration:0.02}
-                },
-            }}
-        >
-            Happy birthday
-            </motion.h1> */}
+        <TextTyping text="Happy birthday joy"  />
+        {/* <TextTyping text="Happy birthday joy"  isVisible={isVisible} setIsVisible={setIsVisible} /> */}
+       
     </div>
   );
 }
@@ -44,6 +41,11 @@ const TextTyping = ({ text }) => {
           setTypedText(text.substring(0, i + 1));
         }
         setIsVisible(true);
+        setTimeout(()=>{
+              console.log('jii')
+              move()
+              
+          },1000);
       };
   
       typeWriter();
@@ -57,7 +59,7 @@ const TextTyping = ({ text }) => {
     return (
       <div>
         {typedText.split('').map((char, index) => (
-          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible"  onAnimationComplete={move}>
+          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible" style={{fontSize:'1.6rem'}}>
             {char}
           </motion.span>
         ))}

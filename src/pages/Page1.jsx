@@ -33,6 +33,7 @@ const Page1 = () => {
             delay:0
         }}
         onAnimationComplete={move }
+        style={{fontSize:'2rem'}}
         >
         I really like you my girl! fr!
         </motion.p>

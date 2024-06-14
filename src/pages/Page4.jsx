@@ -10,18 +10,19 @@ export const Page4 = () => {
     }
   return (
     <div>
-        <motion.h1
+        <motion.p
     initial={{y:-80}}
     animate={{y:[0 ,-100 ] }}
     transition={{
         duration:2,
         delay:0
     }}
+    style={{fontSize:'2rem'}}
     // whileHover={{scale:0.9 , opacity:0.5}}
     onAnimationComplete={move}
     >
       That's What I was going to do.
-    </motion.h1>
+    </motion.p>
     </div>
   )
 }

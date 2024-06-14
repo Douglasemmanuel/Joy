@@ -10,29 +10,47 @@ const Page6 = () => {
         
     }
     const [animateHeading2 , setAnimateHeading2] = useState(false);
+    useEffect(()=>{
+      setTimeout(()=>{
+    
+        console.log('jii')
+        setAnimateHeading2(true)
+        move()
+        
+    },4000);
+    },[])
   return (
     
     <div style={{display:'flex'}}>
   <div>
-  <motion.h1
+  <motion.p
 initial={{y:200}}
 animate={{y:[0 ,100 , 0 ] }}
 transition={{
     duration:2,
     delay:0
 }}
+style={{fontSize:'2rem'}}
 onAnimationComplete={()=> setAnimateHeading2(true)}
 // whileHover={{scale:0.9 , opacity:0.5}}
 >
-I realised , I wanted to do something
-    {/* I realised , I wanted to do something <motion.span style={{fontSize:'3rem' , color:'white'  , width:'10rem' , background:'blue' }} onAnimationComplete={move}>Special</motion.span> */}
-</motion.h1>
+I realised , I wanted to do something   
+        {animateHeading2 && (
+       <motion.span 
+       initial={{y:50}}
+       animate={{y:[0,50 , 0] }}
+       transition={{
+           duration:2,
+           delay:0
+       }}
+       style={{fontSize:'3rem' , color:'white'  , width:'10rem' , background:'blue' }} >Special</motion.span>
+      
+       )}
+       
+     </motion.p>
   </div>
   <div>
-    {animateHeading2 && (
-       
-       <motion.p style={{fontSize:'3rem' , color:'white'  , width:'10rem' , background:'blue' }} onAnimationComplete={move}>Special</motion.p>
-       )}
+    
   </div>
     {/* {animateHeading2 && (
        
