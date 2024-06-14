@@ -32,7 +32,11 @@ const Page3 = () => {
 const TextTyping = ({ text }) => {
     const [isVisible, setIsVisible] = useState(false);
     const [typedText, setTypedText] = useState('');
-  
+    const navigate = useNavigate()
+    const move =()=>{
+        console.log('hiii')
+        navigate('/4')
+    }
     useEffect(() => {
       const typeWriter = async () => {
         for (let i = 0; i < text.length; i++) {
@@ -53,7 +57,7 @@ const TextTyping = ({ text }) => {
     return (
       <div>
         {typedText.split('').map((char, index) => (
-          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible">
+          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible"  onAnimationComplete={move}>
             {char}
           </motion.span>
         ))}
