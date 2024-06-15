@@ -17,7 +17,7 @@ export const Page4 = () => {
         duration:2,
         delay:0
     }}
-    style={{fontSize:'2rem', fontFamily:"Roboto"}}
+    style={{fontSize:'2rem', fontFamily:"Roboto" , color:'black'}}
     // whileHover={{scale:0.9 , opacity:0.5}}
     onAnimationComplete={move}
     >

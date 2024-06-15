@@ -30,7 +30,7 @@ transition={{
     duration:2,
     delay:0
 }}
-style={{fontSize:'1.6rem', fontFamily:"Roboto"}}
+style={{fontSize:'1.6rem', fontFamily:"Roboto", color:'black'}}
 onAnimationComplete={()=> setAnimateHeading2(true)}
 // whileHover={{scale:0.9 , opacity:0.5}}
 >

@@ -27,7 +27,7 @@ const Page11 = () => {
     }}
     whileHover={{scale:0.9 , opacity:0.5}}
     onAnimationComplete={()=> setAnimateHeading2(true)}
-    style={{fontSize:'2rem', fontFamily:"Roboto"}}
+    style={{fontSize:'2rem', fontFamily:"Roboto", color:'black'}}
     >
       Okay, now come back and tell me if you liked it.
     </motion.p>
@@ -41,7 +41,7 @@ const Page11 = () => {
             duration:2,
             delay:0
         }}
-        style={{fontSize:'2rem', fontFamily:"Roboto"}}
+        style={{fontSize:'2rem', fontFamily:"Roboto", color:'black'}}
         onAnimationComplete={()=> setAnimateHeading3(true)}
         >
         Or Click, if you want to watch it again
@@ -55,7 +55,7 @@ const Page11 = () => {
             duration:2,
             delay:0
         }}
-        style={{fontSize:'4rem' , fontFamily:"Roboto"}}
+        style={{fontSize:'4rem' , fontFamily:"Roboto", color:'black'}}
         onAnimationComplete={()=> setAnimateHeading4(true)}
         >
          <FontAwesomeIcon icon={faFaceGrinHearts} />
@@ -69,7 +69,7 @@ const Page11 = () => {
             duration:2,
             delay:0
         }}
-        style={{fontSize:'2rem', fontFamily:"Roboto"}}
+        style={{fontSize:'2rem', fontFamily:"Roboto", color:'black'}}
         // onAnimationComplete={()=> setAnimateHeading4(true)}
         >
         With Love from Douggie

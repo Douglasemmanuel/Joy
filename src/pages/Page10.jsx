@@ -13,7 +13,7 @@ const Page10 = () => {
       navigate('/11')
      
       
-  },1000);
+  },6000);
    
   } , [])
   return (
@@ -22,8 +22,8 @@ const Page10 = () => {
         <img src={joy2}  width={300} height={300}  />
       </div>
       {/* <div style={{marginTop:100}}> */}
-      <p  style={{fontSize:'2rem', fontFamily:"Roboto" , marginTop:20 , fontWeight:'bold'}}>HAPPY BIRTHDAY JOY!</p>
-      <p  style={{fontSize:'1.5rem', fontFamily:"Roboto"}}>May God almighty always bless and put a joy on your face !  <FontAwesomeIcon icon={faFaceGrinHearts}  color='red'/></p>
+      <p  style={{fontSize:'2rem', fontFamily:"Roboto" , marginTop:20 , fontWeight:'bold' , color:'black'}}>HAPPY BIRTHDAY JOY!</p>
+      <p  style={{fontSize:'1.5rem', fontFamily:"Roboto"}}>May God almighty always bless and put a joy on your face !  <FontAwesomeIcon icon={faFaceGrinHearts}  color='black'/></p>
       {/* </div> */}
     </div>
   )

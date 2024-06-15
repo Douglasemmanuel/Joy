@@ -42,7 +42,7 @@ const Page1 = () => {
             delay:0
         }}
         onAnimationComplete={move }
-        style={{fontSize:'2rem', fontFamily:"Roboto"}}
+        style={{fontSize:'2rem', fontFamily:"Roboto" , color:'black'}}
         >
         I really like you my girl! fr!
         </motion.p>

@@ -55,7 +55,7 @@ const TextTyping = ({ text }) => {
     return (
       <div>
         {typedText.split('').map((char, index) => (
-          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible" style={{fontSize:'1.2rem', fontFamily:"Roboto"}}>
+          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible" style={{fontSize:'1.2rem', fontFamily:"Roboto" , color:'black'}}>
             {char}
           </motion.span>
         ))}
