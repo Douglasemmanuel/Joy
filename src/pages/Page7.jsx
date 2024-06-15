@@ -12,7 +12,7 @@ const Page7 = () => {
   return (
     <div>
     <motion.p
-initial={{y:200}}
+initial={{y:50}}
 animate={{y:[0 ,100 , 0 ] }}
 transition={{
     duration:2,

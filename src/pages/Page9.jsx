@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom'
 const Page9 = () => {
     const navigate = useNavigate()
     const move =()=>{
-        navigate('/11')
-    //   navigate('/10')
+       
+        // navigate('/11')
+      navigate('/10')
         console.log('hiii')
         
     }

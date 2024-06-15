@@ -7,7 +7,8 @@ import {faFaceGrinHearts} from '@fortawesome/free-regular-svg-icons/faFaceGrinHe
 const Page11 = () => {
     const navigate = useNavigate()
     const move =()=>{
-      navigate('/10')
+    //   navigate('/10')
+    //   SetCurrentComponent(10)
         console.log('hiii')
         
     }

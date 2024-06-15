@@ -6,9 +6,17 @@ const Page1 = () => {
   const navigate = useNavigate()
     const move =()=>{
       navigate('/2')
+      // SetCurrentComponent(1)
         console.log('hiii')
         
     }
+    // useEffect(()=>{
+    //   const timeoutId = setTimeout(()=>{
+    //     SetCurrentComponent(1)
+    //     console.log('gii' , SetCurrentComponent)
+    //   }, 1000)
+    //   return ()=> clearTimeout(timeoutId)
+    // } ,[])
     const [animateHeading2 , setAnimateHeading2] = useState(false);
   return (
     <div>
