@@ -16,7 +16,7 @@ const Movements = () => {
    <BrowserRouter>
    <Routes>
     <Route path='/'  element={<Page1/>}/>
-    <Route path='/2'  element={<Page2/>}/>
+    {/* <Route path='/2'  element={<Page2/>}/>
     <Route path='/3'  element={<Page3/>}/>
     <Route path='/4'  element={<Page4/>}/>
     <Route path='/5'  element={<Page5/>}/>
@@ -25,7 +25,7 @@ const Movements = () => {
     <Route path='/8'  element={<Page8/>}/>
     <Route path='/9'  element={<Page9/>}/>
     <Route path='/10'  element={<Page10/>}/>
-    <Route path='/11'  element={<Page11/>}/>
+    <Route path='/11'  element={<Page11/>}/> */}
    </Routes>
    </BrowserRouter>
   )

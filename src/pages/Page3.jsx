@@ -2,33 +2,44 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { useState , useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-const Page3 = ({SetCurrentComponent}) => {
-  // const [isVisible, setIsVisible] = useState(false);
+import { Page4 } from './Page4'
+const Page3 = () => {
+  const  [visible , setVisible]  = useState(true)
+  const [step , setStep] = useState(false)
   const move =()=>{
+   
     console.log('hiii')
-    navigate('/4')
-    // SetCurrentComponent(3)
+    // navigate('/4')
+    setStep(true)
+   
 }
   
   return (
-    <div>
-        {/* <h1>Happy birthday</h1> */}
-        <div style={{borderRadius:10  , width:'22rem'  , borderWidth: 2 , borderColor:'grey ' , borderStyle:'solid'}}>
-        <TextTyping text="Happy birthday to you!! pretty joy!!!! Many many happy returns..."  />
-        </div>
-        <button style={{alignItems:'flex-end' , marginTop:10}}>Send</button>
-        {/* <TextTyping text="Happy birthday joy"  isVisible={isVisible} setIsVisible={setIsVisible} /> */}
+   <>
+  {visible && (
+      <div>
        
-    </div>
+      <div style={{borderRadius:10  , width:'22rem'  , borderWidth: 2 , borderColor:'grey ' , borderStyle:'solid'}}>
+      <TextTyping text="Happy birthday to you!! pretty joy!!!! Many many happy returns..."  setStep={setStep}  setVisible={setVisible} />
+      </div>
+      <button style={{alignItems:'flex-end' , marginTop:10}}>Send</button>
+      {/* <TextTyping text="Happy birthday joy"  isVisible={isVisible} setIsVisible={setIsVisible} /> */}
+     
+  </div>
+  )}
+   {step && <Page4/>}
+   </>
   );
 }
-const TextTyping = ({ text }) => {
+const TextTyping = ({ text  , setStep , setVisible}) => {
     const [isVisible, setIsVisible] = useState(false);
     const [typedText, setTypedText] = useState('');
     const navigate = useNavigate()
     const move =()=>{
         console.log('hiii')
-        navigate('/4')
+        // navigate('/4')
+        setVisible(false)
+        setStep(true)
     }
     useEffect(() => {
       const typeWriter = async () => {
