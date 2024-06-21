@@ -39,8 +39,10 @@ style={{fontSize:'10rem', fontFamily:"Roboto", color:'black'}}
 <div>
 {animateHeading2 && (
     <motion.h1
-    initial={{y:10  }}
-    animate={{y:[50 , 0] }}
+    // initial={{y:10  }}
+    // animate={{y:[50 , 0] }}
+    initial={{y:-80}}
+    animate={{y:[0 ,-100 ] }}
     transition={{
         duration:2,
         delay:0

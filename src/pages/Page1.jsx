@@ -23,8 +23,10 @@ const Page1 = () => {
         {visible && (
             <div>
             <motion.h1
-            initial={{y:300}}
-            animate={{y:[600 , 0] }}
+            // initial={{y:300}}
+            // animate={{y:[600 , 0] }}
+            initial={{y:-50}}
+            animate={{y:[0 ,-120 ] }}
             transition={{
                 duration:2,
                 delay:0
@@ -37,8 +39,10 @@ const Page1 = () => {
             </motion.h1>
             {animateHeading2 && (
                 <motion.p
-                initial={{y:100  }}
-                animate={{y:[400 , 0] }}
+                // initial={{y:100  }}
+                // animate={{y:[400 , 0] }}
+                initial={{y:-50}}
+                animate={{y:[0 ,-120 ] }}
                 transition={{
                     duration:2,
                     delay:0

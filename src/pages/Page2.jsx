@@ -18,8 +18,10 @@ const Page2 = () => {
    {visible && (
      <div>
      <motion.p
- initial={{y:100}}
- animate={{y:[100 , 0] }}
+//  initial={{y:100}}
+//  animate={{y:[100 , 0] }}
+initial={{y:-80}}
+animate={{y:[0 ,-200 ] }}
  transition={{
      duration:2,
      delay:0

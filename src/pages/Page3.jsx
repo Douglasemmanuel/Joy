@@ -19,7 +19,7 @@ const Page3 = () => {
   {visible && (
       <div>
        
-      <div style={{borderRadius:10  , width:'22rem'  , borderWidth: 2 , borderColor:'grey ' , borderStyle:'solid'}}>
+      <div style={{borderRadius:10  , width:'20rem'  , borderWidth: 2 , borderColor:'grey ' , borderStyle:'solid'}}>
       <TextTyping text="Happy birthday to you!! pretty joy!!!! Many many happy returns..."  setStep={setStep}  setVisible={setVisible} />
       </div>
       <button style={{alignItems:'flex-end' , marginTop:10}}>Send</button>
@@ -55,6 +55,7 @@ const TextTyping = ({ text  , setStep , setVisible}) => {
           },1000);
       };
   
+
       typeWriter();
     }, [text]);
   
@@ -66,7 +67,7 @@ const TextTyping = ({ text  , setStep , setVisible}) => {
     return (
       <div>
         {typedText.split('').map((char, index) => (
-          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible" style={{fontSize:'1.2rem', fontFamily:"Roboto" , color:'black'}}>
+          <motion.span key={index} variants={characterVariants} initial="hidden" animate="visible" style={{fontSize:'1.2rem', fontFamily:"Roboto" , color:'white' }}>
             {char}
           </motion.span>
         ))}
