@@ -23,8 +23,10 @@ const Page9 = () => {
      <div style={{display:'flex'}}>
      <div>
 <motion.h1
-initial={{y:10}}
-animate={{y:[50 , 0] }}
+// initial={{y:10}}
+// animate={{y:[50 , 0] }}
+initial={{y:-80}}
+    animate={{y:[0 ,-100 ] }}
 transition={{
     duration:2,
     delay:0

@@ -22,7 +22,7 @@ const Page3 = () => {
       <div style={{borderRadius:10  , width:'20rem'  , borderWidth: 2 , borderColor:'grey ' , borderStyle:'solid'}}>
       <TextTyping text="Happy birthday to you!! pretty joy!!!! Many many happy returns..."  setStep={setStep}  setVisible={setVisible} />
       </div>
-      <button style={{alignItems:'flex-end' , marginTop:10}}>Send</button>
+      <button style={{alignItems:'flex-end' , marginTop:10 , backgroundColor:'white ' , color:'black' , border:'2px solid black'}}>Send</button>
       {/* <TextTyping text="Happy birthday joy"  isVisible={isVisible} setIsVisible={setIsVisible} /> */}
      
   </div>
